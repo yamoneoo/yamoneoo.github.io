@@ -266,7 +266,7 @@ button.btn.btn-theme-color:hover{
     background-size: cover;
     position: relative;
     width: 100%;
-    background:url("img/banner.JPG");
+    background:url("../img/banner.JPG");
     background-size: cover;
 }
 
