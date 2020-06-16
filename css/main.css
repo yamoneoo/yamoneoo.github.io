@@ -980,6 +980,10 @@ button.btn.btn-theme-color:hover{
     .site-header.fixed .navbar-collapse{
         background: transparent;
     }
+    .contact-info
+    {
+        margin-top: 3rem;
+    }
 
 }
 
@@ -989,6 +993,7 @@ button.btn.btn-theme-color:hover{
 ==============================================================*/
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+
 
 }
 
