@@ -372,14 +372,29 @@
                            </form>
                        </div> -->
                         <div  class="contact-form">
-                            <input type="text" name="name" id="name" placeholder="Name">
-                            <input type="email" name="email" id="email" placeholder="Email">
-                            <input type="text" name="web" id="web" placeholder="Web">
+                            <form action="" method="post">
+                                <input type="text" name="name" id="name" placeholder="Name">
+                                <input type="email" name="email" id="email" placeholder="Email">
+                                <input type="text" name="web" id="web" placeholder="Web">
 
-                            <textarea name="message" id="message" cols="30" rows="10" class="input-message" placeholder="Comment"></textarea>
-                            <div style="display: block;">
-                               <a href="" class="btn">send</a> 
-                            </div>
+                                <textarea name="message" id="message" cols="30" rows="10" class="input-message" placeholder="Comment"></textarea>
+                                <button class="btn btn-theme-color" type="submit" name="submit">SEND</button>
+                            </form>
+                            <?php 
+                                if(isset($_POST['submit'])){
+                                    $to = "yamoneoo.uit@gmail.com"; // this is your Email address
+                                    $from = $_POST['email']; // this is the sender's Email address
+                                    $name = $_POST['name'];
+                                    $subject = "Contact from website";
+                                    $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
+
+                                    $headers = "From:" . $from;
+                                    $headers2 = "From:" . $to;
+                                    mail($to,$subject,$message,$headers); // sends a copy of the message to the sender
+                                    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+                                    // You can also use header('Location: thank_you.php'); to redirect to another page.
+                                    }
+                                ?>
                             
                         </div>
                     </div>
@@ -448,5 +463,6 @@
         <script src="js/jquery.justifiedGallery.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
+        
     </body>
 </html>
