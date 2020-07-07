@@ -25,7 +25,7 @@
         <link href='https://fonts.googleapis.com/css?family=Raleway:200,300,400,700,900,800' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Roboto:200,300,400,900,700,500,300' rel='stylesheet' type='text/css'>
 
-		
+        
         <!--
         CSS
         ============================================= -->
@@ -38,15 +38,15 @@
         <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/owl.theme.css">
         <link rel="stylesheet" href="css/main.css">
-		
+        
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->		
+        <![endif]-->        
     </head>
-	
+    
     <body>
         <!-- #preloader -->
         <!-- end #preloader -->
@@ -372,14 +372,15 @@
                            </form>
                        </div> -->
                         <div  class="contact-form">
-                            <input type="text" name="name" id="name" placeholder="Name">
-                            <input type="email" name="email" id="email" placeholder="Email">
-                            <input type="text" name="web" id="web" placeholder="Web">
+                            <form action="javascript:sendMail();" method="post">
+                                <input type="text" name="name" id="name" placeholder="Name">
+                                <input type="email" name="email" id="email" placeholder="Email">
+                                <input type="text" name="web" id="web" placeholder="Web">
 
-                            <textarea name="message" id="message" cols="30" rows="10" class="input-message" placeholder="Comment"></textarea>
-                            <div style="display: block;">
-                               <a href="" class="btn">send</a> 
-                            </div>
+                                <textarea name="message" id="message" cols="30" rows="10" class="input-message" placeholder="Comment"></textarea>
+                                <button class="btn btn-theme-color" type="submit" name="submit">SEND</button>
+                            </form>
+                           
                             
                         </div>
                     </div>
@@ -440,7 +441,7 @@
         ========================== -->
         
 
-
+    
         <script src="js/vendor/jquery-1.11.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/owl.carousel.js"></script>
@@ -448,5 +449,10 @@
         <script src="js/jquery.justifiedGallery.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
+        <script type="text/javascript">
+            function sendMail(){
+                window.open('mailto:yamoneoo.uit@gmail.com?subject="hello"&body="testing"');
+            }
+        </script>
     </body>
 </html>
