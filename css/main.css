@@ -7,7 +7,7 @@
 */
 
 /* =================================== */
-/*	Basic Style 
+/*  Basic Style 
 /* =================================== */
 
 @import url(https://fonts.googleapis.com/css?family=Volkhov:400italic);
@@ -49,7 +49,7 @@ h1, h2, h3,
 h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-	margin: 0;
+    margin: 0;
 }
 
 .list-none {
@@ -61,11 +61,11 @@ ul {
     padding-left: 0;
 }
 
-
-
 .btn {
-   border-radius: 0;
+    border: 0;
+    border-radius: 0;
 }
+
 .btn-theme-color {
     background-color: #ff2b4a;
     color: #fff;
@@ -75,7 +75,6 @@ ul {
     transition: 0.5s;
     border: 1px solid;
 }
-
 
 button.btn.btn-theme-color:hover{
     border-color:  #323232;
@@ -265,9 +264,8 @@ button.btn.btn-theme-color:hover{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     width: 100%;
-    background-image:url("../img/banner.JPG");
+    background-image: url('../img/banner.JPG');
     background-size: cover;
 }
 
@@ -924,7 +922,7 @@ button.btn.btn-theme-color:hover{
 ============================================================*/
 
 /*============================================================
-	For Small Desktop
+    For Small Desktop
 ==============================================================*/
 
 @media (min-width: 980px) and (max-width: 1150px) {
@@ -933,7 +931,7 @@ button.btn.btn-theme-color:hover{
 
 
 /*============================================================
-	Tablet (Portrait) Design for a width of 768px
+    Tablet (Portrait) Design for a width of 768px
 ==============================================================*/
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -942,7 +940,7 @@ button.btn.btn-theme-color:hover{
 
 
 /*============================================================
-	Mobile (Portrait) Design for a width of 320px
+    Mobile (Portrait) Design for a width of 320px
 ==============================================================*/
 
 @media only screen and (max-width: 767px) {
@@ -981,20 +979,15 @@ button.btn.btn-theme-color:hover{
     .site-header.fixed .navbar-collapse{
         background: transparent;
     }
-    .contact-info
-    {
-        margin-top: 3rem;
-    }
 
 }
 
 
 /*============================================================
-	Mobile (Landscape) Design for a width of 480px
+    Mobile (Landscape) Design for a width of 480px
 ==============================================================*/
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-
 
 }
 
